@@ -2,6 +2,10 @@
 
 A comprehensive, standalone FHEVM example repository demonstrating privacy-preserving smart contracts through a real-world gaming application. This submission fulfills all requirements of the Zama Bounty Program Challenge: "Build The FHEVM Example Hub."
 
+[FHEVM Privacy Poker Game.mp4](https://streamable.com/hei7rs)
+
+[Live Demo](https://fhevm-privacy-poker-game.vercel.app/)
+
 ## Project Overview
 
 The Privacy Poker Game serves as a complete learning hub for FHEVM development, featuring:
