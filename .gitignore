@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build artifacts
+dist/
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Hardhat
+hardhat.config.cjs.bak
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Output directories
+output/
+test-output/
+my-poker-example/
+my-*.*/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Generated files
+docs/*.md
+!docs/README.md
+!docs/SUMMARY.md
+!docs/privacy-poker.md
+!docs/simple-poker.md
+
+# Optional npm cache
+.npm
