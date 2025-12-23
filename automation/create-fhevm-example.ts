@@ -48,16 +48,62 @@ interface ExampleConfig {
 
 // Map of example names to their contract and test paths
 const EXAMPLES_MAP: Record<string, ExampleConfig> = {
+  // Basic Examples
+  'fhe-counter': {
+    contract: 'contracts/basic/FHECounter.sol',
+    test: 'test/basic/FHECounter.test.ts',
+    description: 'Simple FHE counter demonstrating encrypted state management',
+    category: 'Basic',
+  },
+  'fhe-arithmetic': {
+    contract: 'contracts/basic/FHEArithmetic.sol',
+    test: 'test/basic/FHEArithmetic.test.ts',
+    description: 'FHE arithmetic operations: add, subtract, multiply',
+    category: 'Basic',
+  },
+  'fhe-equality': {
+    contract: 'contracts/basic/FHEEquality.sol',
+    test: 'test/basic/FHEEquality.test.ts',
+    description: 'FHE comparison operations: equality, greater than, less than',
+    category: 'Basic',
+  },
+  // Encryption Examples
+  'encrypt-single-value': {
+    contract: 'contracts/encryption/EncryptSingleValue.sol',
+    test: 'test/encryption/EncryptSingleValue.test.ts',
+    description: 'Encrypt and store a single value with proper permissions',
+    category: 'Encryption',
+  },
+  'encrypt-multiple-values': {
+    contract: 'contracts/encryption/EncryptMultipleValues.sol',
+    test: 'test/encryption/EncryptMultipleValues.test.ts',
+    description: 'Handle multiple encrypted values and perform operations',
+    category: 'Encryption',
+  },
+  // Access Control Examples
+  'access-control': {
+    contract: 'contracts/access-control/AccessControlExample.sol',
+    test: 'test/access-control/AccessControlExample.test.ts',
+    description: 'FHE access control patterns: allowThis, allow, allowTransient',
+    category: 'Access Control',
+  },
+  'input-proof': {
+    contract: 'contracts/input-proof/InputProofExample.sol',
+    test: 'test/input-proof/InputProofExample.test.ts',
+    description: 'Input proof handling and validation patterns',
+    category: 'Input Proofs',
+  },
+  // Gaming Examples
   'privacy-poker': {
     contract: 'contracts/PokerGame.sol',
     test: 'test/PokerGame.test.ts',
-    description: 'A confidential poker game using FHE encryption for cards, bets, and player actions',
+    description: 'Full-featured confidential poker game with FHE',
     category: 'Gaming',
   },
   'simple-poker': {
     contract: 'contracts/PokerGameSimple.sol',
     test: 'test/PokerGameSimple.test.ts',
-    description: 'A simplified version of the privacy poker game for learning FHE basics',
+    description: 'Simplified poker game for learning FHE basics',
     category: 'Gaming',
   },
 };

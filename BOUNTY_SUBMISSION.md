@@ -378,6 +378,6 @@ The project successfully demonstrates how developers can leverage FHEVM to build
 
 **Submission Date**: December 2025
 **Repository**: Privacy Poker Game FHEVM Example
-**License**: UNLICENSED
+**License**: BSD-3-Clause-Clear
 
 Built with Fully Homomorphic Encryption by Zama

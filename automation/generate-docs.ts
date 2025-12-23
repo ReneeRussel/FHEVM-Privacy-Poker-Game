@@ -55,6 +55,66 @@ interface GenerateDocsOptions {
 
 // Example configurations
 const EXAMPLES_CONFIG: Record<string, DocsConfig> = {
+  // Basic Examples
+  'fhe-counter': {
+    title: 'FHE Counter',
+    description: 'Simple FHE counter demonstrating encrypted state management',
+    contract: 'contracts/basic/FHECounter.sol',
+    test: 'test/basic/FHECounter.test.ts',
+    output: 'docs/fhe-counter.md',
+    category: 'Basic',
+  },
+  'fhe-arithmetic': {
+    title: 'FHE Arithmetic',
+    description: 'FHE arithmetic operations: add, subtract, multiply',
+    contract: 'contracts/basic/FHEArithmetic.sol',
+    test: 'test/basic/FHEArithmetic.test.ts',
+    output: 'docs/fhe-arithmetic.md',
+    category: 'Basic',
+  },
+  'fhe-equality': {
+    title: 'FHE Comparisons',
+    description: 'FHE comparison operations: equality, greater than, less than',
+    contract: 'contracts/basic/FHEEquality.sol',
+    test: 'test/basic/FHEEquality.test.ts',
+    output: 'docs/fhe-equality.md',
+    category: 'Basic',
+  },
+  // Encryption Examples
+  'encrypt-single-value': {
+    title: 'Encrypt Single Value',
+    description: 'Encrypt and store a single value with proper permissions',
+    contract: 'contracts/encryption/EncryptSingleValue.sol',
+    test: 'test/encryption/EncryptSingleValue.test.ts',
+    output: 'docs/encrypt-single-value.md',
+    category: 'Encryption',
+  },
+  'encrypt-multiple-values': {
+    title: 'Encrypt Multiple Values',
+    description: 'Handle multiple encrypted values and perform operations',
+    contract: 'contracts/encryption/EncryptMultipleValues.sol',
+    test: 'test/encryption/EncryptMultipleValues.test.ts',
+    output: 'docs/encrypt-multiple-values.md',
+    category: 'Encryption',
+  },
+  // Access Control
+  'access-control': {
+    title: 'Access Control',
+    description: 'FHE access control: allowThis, allow, allowTransient',
+    contract: 'contracts/access-control/AccessControlExample.sol',
+    test: 'test/access-control/AccessControlExample.test.ts',
+    output: 'docs/access-control.md',
+    category: 'Access Control',
+  },
+  'input-proof': {
+    title: 'Input Proof',
+    description: 'Input proof handling and validation patterns',
+    contract: 'contracts/input-proof/InputProofExample.sol',
+    test: 'test/input-proof/InputProofExample.test.ts',
+    output: 'docs/input-proof.md',
+    category: 'Input Proofs',
+  },
+  // Gaming Examples
   'privacy-poker': {
     title: 'Privacy Poker Game',
     description: 'This example demonstrates how to build a confidential poker game using FHEVM, where all player cards, bets, and actions remain encrypted throughout the game.',

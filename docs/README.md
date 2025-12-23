@@ -302,7 +302,7 @@ A: Join the Zama Discord community for support and discussions.
 
 ## License
 
-This project is licensed under UNLICENSED.
+This project is licensed under BSD-3-Clause-Clear. See LICENSE file for details.
 
 ---
 
